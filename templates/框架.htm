@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+		<meta name="renderer" content="webkit" />
+		<meta name="force-rendering" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<!-- MDUI CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+		 crossorigin="anonymous" />
+		<title>Converter</title>
+	</head>
+	<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-layout-auto">
+		<div class="mdui-appbar mdui-appbar-fixed">
+			<div class="mdui-toolbar">
+				<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></button>
+				<a href="/" class="mdui-typo-headline">Converter</a>
+				<a href="JavaScript:;" class="mdui-typo-title"><!-- {page_name} --></a>
+			</div>
+		</div>
+		<!-- 默认抽屉栏在左侧 -->
+		<div class="mdui-drawer" id="left-drawer">
+			<!-- img2img
+			img2video
+			video2img
+			video2audio
+			video2video
+			audio2img
+			audio2video
+			audio2audio
+			压缩 -->
+			<div class="mdui-list">
+                <a href="/" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">首页</div>
+				</a>
+                <div class="mdui-typo">
+                    <hr/>
+                </div>
+				<a href="/img2img" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">image</i>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">compare_arrows</i>
+					<i class="mdui-list-item-icon mdui-icon material-icons">image</i>
+					<div class="mdui-list-item-content">图片格式互转</div>
+				</a>
+                <a href="/img2video" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">image</i>
+                    <i class="mdui-icon material-icons">keyboard_arrow_right</i>
+					<i class="mdui-list-item-icon mdui-icon material-icons">ondemand_video</i>
+					<div class="mdui-list-item-content">图片转视频</div>
+				</a>
+                <div class="mdui-typo">
+                    <hr/>
+                </div>
+				<a href="/audio2audio" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">library_music</i>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">compare_arrows</i>
+					<i class="mdui-list-item-icon mdui-icon material-icons">library_music</i>
+					<div class="mdui-list-item-content">音频格式互转</div>
+				</a>
+                <a href="/audio2video" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">library_music</i>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">keyboard_arrow_right</i>
+					<i class="mdui-list-item-icon mdui-icon material-icons">ondemand_video</i>
+					<div class="mdui-list-item-content">音频转视频</div>
+				</a>
+                <div class="mdui-typo">
+                    <hr/>
+                </div>
+                <a href="/video2video" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">ondemand_video</i>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">compare_arrows</i>
+					<i class="mdui-list-item-icon mdui-icon material-icons">ondemand_video</i>
+					<div class="mdui-list-item-content">视频格式互转</div>
+				</a>
+                <a href="/video2audio" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">ondemand_video</i>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">keyboard_arrow_right</i>
+					<i class="mdui-list-item-icon mdui-icon material-icons">library_music</i>
+					<div class="mdui-list-item-content">视频转音频</div>
+				</a>
+                <div class="mdui-typo">
+                    <hr/>
+                </div>
+                <!-- <a href="/gif" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">gif</i>
+					<div class="mdui-list-item-content">GIF编辑</div>
+				</a> -->
+                <!-- <a href="/custom" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">subscriptions</i>
+					<div class="mdui-list-item-content">自定义命令行</div>
+				</a>
+                <div class="mdui-typo">
+                    <hr/>
+                </div> -->
+                <a href="/dlg" class="mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons">info</i>
+					<div class="mdui-list-item-content">赞助&说明</div>
+				</a>
+			</div>
+		</div>
+    <!-- { content } -->
+		<!-- MDUI JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+		 crossorigin="anonymous"></script>
+	</body>
+<script>
+//哈哈哈看到你了  —— diyanqi
+//这里可能要用一个页面，因为有很多东西要写呢……
+  function show_dlg_info(){
+    text=`blablablablablablablablabla`
+    title='blabla'
+    mdui.alert(text, title)
+  }
+</script>
+</html>

@@ -1,0 +1,44 @@
+<div class="mdui-container">
+			<h2>1.首先，上传代转换的音频文件：</h2>
+			<div class="mdui-container">
+                <input type="file" name="mp4" id="mp4" accept="*/*" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"/>
+                <button onclick="uploadvideo()" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-red-accent" id="upb">上传</button>
+                <div id="upjindu"></div>
+			</div>
+<br>
+            <h2>2.然后，设置转换参数：</h2>
+            <div class="mdui-container">
+                <h3>转换成
+                    <select class="mdui-select" mdui-select id="type_select">
+                        <option value="gif">gif</option>
+                        <option value="mp4">mp4</option>
+                        <option value="avi">avi</option>
+                        <option value="wmv">wmv</option>
+                        <option value="mov">mov</option>
+                        <option value="flv">flv</option>
+                        <option value="other">其它……</option>
+                    </select>
+                    格式；
+                    <div id="inputbox"></div>
+                </h3>
+            </div>
+<br>
+            <h2>3.最后，转换并下载！</h2>
+            <div class="mdui-container">
+                <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="tijiao" onclick="go()" disabled>请先完成以上步骤</button>
+                <div id="waitingconvert"></div>
+                <br><br>
+                <div id="dbt"></div>
+                <div class="mdui-typo">
+                <blockquote>
+                    <p>下载失败？请检查参数设置是否有误！（重新设置须刷新页面重新操作）</p>
+                    <p>使用本站点的服务即代表您同意本站的<a href="/dlg#terms_for_service">服务条款</a>。</p>
+                    <p>我们如何处理您上传与操作后的文件？<a href="/dlg#how_does_converter_to_handle_the_uploaded_and_operated_files">戳我查看——</a></p>
+                    <p>我们为什么提供完全免费的服务？<a href="/dlg#why_it_is_free">戳我了解——</a></p>
+                    <p>有什么您感到不满意的地方？<a href="/dlg#feedback">戳我反馈——</a></p>
+                </blockquote>
+                </div>
+                <!-- <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="download" disabled>下载</button> -->
+            </div>
+</div>
+<script src="static/video2video.js"></script>
